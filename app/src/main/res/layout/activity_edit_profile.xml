@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:orientation="vertical"
+    tools:context="com.delaroystudios.firebaselogin.EditProfileActivity">
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_profile_name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/profile_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_profile_country"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_profile_phone"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/profile_hobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_profile_hobby"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/bottom_border"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/profile_birth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/bottom_border"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/profile_birth_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/select_date"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/save_edit"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/_12sdp"/>
+
+
+</LinearLayout>
